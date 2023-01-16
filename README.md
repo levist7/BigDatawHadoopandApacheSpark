@@ -1,4 +1,4 @@
-# Student Scores Project | Big Data Analytics w/ Hadoop and Apache Spark
+# Project | Big Data Analytics w/ Hadoop and Apache Spark
  
  <img src = "https://hadoopinrealworld.com/wp-content/uploads/2017/09/Spark-vs-Hadoop-Comparison-Chart.png" width = "500">
  
@@ -12,7 +12,7 @@
 
 ## Background 
 
-This project shows the combined capabilities of Hadoop and Apache Spark for a project showing some statistics on a student score data set. The practice of combining the strong sides of these two projects (i.e., Hadoop HDFS + Apache Spark) is regarderd highly by the data teams in these days.
+The project aims at showing the combined capabilities of Hadoop and Apache Spark on data analytics of a student score dataset. The practice of combining the strong sides of these two frameworks (i.e., Hadoop HDFS + Apache Spark) is regarderd highly by the data teams in these days.
 
 **What is Hadoop?**
 
@@ -27,7 +27,7 @@ Among these modules, this project focuses on Hadoop HDFS. It is the file system 
 
 **What is Apache Spark?**
 
-Apache Spark is an open source project. It uses RAM for caching and processing data ans is designed for fast performance. Resilient Distributed Dataset (RDD) is the data structure of Spark.  It consists of five main components:
+Apache Spark is an open source project. It uses RAM for caching and processing data and is designed for fast performance. Resilient Distributed Dataset (RDD) is the data structure of Spark. It consists of five main components:
 
 *  Apache Spark Core. Spark Core is the basis and includes functions of *scheduling, task dispatching, input and output operations, etc.* 
 *  Spark Streaming. It is used for processing of live data streams with data sources of Kafka, Kinesis, Flume, etc.
@@ -35,13 +35,13 @@ Apache Spark is an open source project. It uses RAM for caching and processing d
 *  Machine Learning Library (MLlib) includes machine learning algorithms.
 *  GraphX is for facilitating graph analytics tasks.
 
-In this notebook, we use Apache Spark Core functions as it uses memory to speed up the computations.  
+In this notebook, we use Apache Spark Core functions using memory to speed up the computations.  
 
 ## Dataset
 
-Dataset consists of student scores of different subjects in CSV file format. There are 40 rows of data and one header. It is relatively small for the sake of practicing functions. In big data world, data size can go up to petabytes. 4 columns are given below:
+Dataset consists of student scores of different subjects in CSV file format. There are 40 rows of data and one header. It is relatively small for the sake of practicing two frameworks. In the field of big data, the data size can reach over petabytes. 
 
-Student | Subject |	Class Score |	Test Score
+4 columns are listed as => Student | Subject |	Class Score |	Test Score
 
 ## Goals
 
@@ -50,8 +50,8 @@ This notebook will walk you through the (1) data loading into HDFS format and (2
 * Import functions
 * Data load 
     * Parquet File + Gzip codec  
-    We prefer Parquet in HDFS as it reads col by col, provides schema, is compressible and splittable. It is ideal for analytics  
-    We prefer gzip codec as it provides good compression but is not splittable and provides moderate performance. It is good for analytical purposes.  
+    We prefer Parquet in HDFS as it reads col by col, provides schema, is compressible and splittable. It is ideal for analytics.  
+    We prefer gzip codec as it provides good compression but is not splittable and provides moderate performance. It is also commonly used for analytical purposes.  
     * Schema optimization
 * Data processing
     * Computing total score
@@ -61,12 +61,12 @@ This notebook will walk you through the (1) data loading into HDFS format and (2
 
 ## Technologies
 
-Project is created with community version of [DataBricks](https://community.cloud.databricks.com). It is a free edition and requires signing up to the website. Selected cluster for this project is 11.3 LTS. It includes  
+Project is created with the community version of [DataBricks](https://community.cloud.databricks.com). It is the free edition of Databricks and only requires signing up. No installation is neccessary to run this repo. Selected cluster for this project is 11.3 LTS. It includes  
 
 * Apache Spark 3.3.0
 * Scala 2.12
 
-Driver type includes 15.3 GB Memory, 2 Cores and 1 DBU.
+Driver type includes 15.3 GB Memory, 2 Cores and 1 DBU. It is the default resource for the community edition of Databricks.
 
 ## License
 
